@@ -10,7 +10,7 @@ if __name__ == '__main__':
     #// Put this sentence in a pop-up message box:
 
     # Get the player to enter an adjective
-    adjective = simpledialog.askstring("Question", "Enter an ejective")
+    adjective = simpledialog.askstring("Question", "Enter an adjective")
     # Get the player to enter a type of liquid
     liquid=simpledialog.askstring("Question","Enter a type of liquid")
     # Get the player to enter a body part
@@ -25,11 +25,11 @@ if __name__ == '__main__':
     # Hint:  You will need to add more + signs to join the variables to the other parts of the story.
         
     story = (
-    "Piranhas are more [**adjective**] during the day, so cross the river at\n"
-    "night. Piranhas are attracted to fresh [**type of liquid**] and will most\n"
-    "likely take a bite out of your [**body part**] if you [**verb**]. Whatever\n"
+    "Piranhas are more " + adjective + " during the day, so cross the river at\n"
+    "night. Piranhas are attracted to fresh "+ adjective+" and will most\n"
+    "likely take a bite out of your " +body+ " if you "+verb+". Whatever\n"
     "you do, if you have an open wound, try to find another way to get "
-    "back to the [**place**]. Good luck!"
+    "back to the "+place+". Good luck!"
     )
 
     
